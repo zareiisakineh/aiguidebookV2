@@ -14,21 +14,21 @@ header{
     */
 .KI {
       position: absolute;
-    top: 30%;
-    left: 20%;
+    top: 20%;
+    left: 10%;
     font-size: 70px;
     font-style: oblique;
     text-align: center;
      }
      .c1{
     margin: 0;
-   
         opacity: 0.4;
 }
 
     .navbar {
     background-color: rgb(127, 188, 178);
     padding: 10px;
+    margin-top: 0px;
     position: relative;
 }
 
