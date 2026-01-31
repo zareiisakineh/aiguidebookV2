@@ -1,3 +1,3 @@
 # aiguidebookV2
-En guidbook for ansvarlig KI-bruk
-Utviklet av gruppe 1
+En guidbook for ansvarlig KI-bruk<br>
+Utviklet av gruppe 1<br> Imran, Sakineh, Ngan
