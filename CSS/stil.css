@@ -136,3 +136,17 @@ footer{
 li{
     font-size: x-large;
 }
+.quiz{
+    border-radius: 20px;
+    background-color: rgb(220, 250, 242);
+     border: 1px solid #ddd;
+  padding: 1.2rem;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+.quiz-boks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+ align-items: stretch;
+}
