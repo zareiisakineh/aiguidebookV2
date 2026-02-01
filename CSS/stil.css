@@ -154,3 +154,9 @@ li{
 .fasit p{
     font-size: x-small;
 }
+summary{
+    font-style: normal;
+    font-weight: bolder;
+    font-size: xx-large;
+    padding: 2rem;
+}
