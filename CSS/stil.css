@@ -129,7 +129,7 @@ article{
 footer{
     display: block;
     clear: both;
-    background-color: rgb(202, 242, 242);
+    background-color: rgb(127, 188, 178);
     text-align: center;
     padding: 25px;
     }
@@ -162,7 +162,7 @@ summary{
 }
 .int{
       border-radius: 20px;
-    background-color: rgb(176, 244, 244);
+    background-color: rgb(224, 238, 231);
      border: 1px solid #f48989;
   padding: 1rem;
   box-sizing: border-box;
