@@ -9,18 +9,25 @@ body{
       position: absolute;
     top: 20%;
     left: 10%;
-    font-size: 30px;
+    font-size: 70px;
     font-style: oblique;
     text-align: center;
      }
+     .c1{
+    margin: 0;
+        opacity: 0.4;
+}
+.bilde {
+    position: relative;
+    text-align: center;
+    opacity: 0,4;
+     }
+
 .Nettegg{
     font-size: smaller;
     
 }
-.c1{
-    margin: 0;
-        opacity: 0.4;
-}
+  
 .navbar {
     background-color: rgb(127, 188, 178);
     padding: 10px;
@@ -30,6 +37,7 @@ body{
 p{
     font-size: x-large;
 }
+
 /* Hamburger-knapp */
 .menu-toggle {
     display: block;
@@ -106,11 +114,7 @@ main {
     margin-left: 20px;
     margin-right: 20px;
 }
-.bilde {
-    position: relative;
-    text-align: center;
-    opacity: 0,4;
-  }
+
   .c2{
     float: left;
     margin-left: 100px;
