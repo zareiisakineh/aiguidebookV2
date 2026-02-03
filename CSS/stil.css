@@ -158,10 +158,10 @@ li{
     border-radius: 20px;
     background-color: rgb(220, 250, 242);
      border: 1px solid #ddd;
-  padding: 1.2rem;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
+    padding: 1.2rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 .quiz-boks {
   display: grid;
@@ -187,14 +187,13 @@ li{
   }
 } 
 .fasit p{
-    font-size: x-small;
+    font-size: medium;
 }
 summary{
     font-style: normal;
-    font-weight: bolder;
-    font-size: xx-large;
-    padding: 2rem;
-}
+   padding: 20px;
+    font-size: x-large;
+    }
 .int{
       border-radius: 20px;
     background-color: rgb(224, 238, 231);
