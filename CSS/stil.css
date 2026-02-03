@@ -6,22 +6,37 @@ body{
 }
 
 .KI {
-      position: absolute;
-    top: 20%;
-    left: 10%;
-    font-size: 40px;
+     /* position: absolute;*/
+   
+    background-image: url("../images/image2.png");
+    max-inline-size: 100%;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 6rem 1rem;
+    text-align: center;
+    opacity: 0.8;
+     }
+     .c1{ 
+    font-size: 2rem;
     font-style: oblique;
     text-align: center;
-     }
-     .c1{
+    opacity: 1.2;
+        }
+
+   /*  .c1{
     margin: 0;
         opacity: 0.4;
+        padding: 10;
 }
 .bilde {
     position: relative;
     text-align: center;
     opacity: 0,4;
+    display: block;
      }
+    */
 
 .Nettegg{
     font-size: smaller;
@@ -45,7 +60,7 @@ p{
     border: 2px solid rgb(7, 14, 14);
     color: rgb(7, 14, 14);
     font-size: 1.5rem;
-    padding: 8px 12px;
+    padding: 8px 15px;
     cursor: pointer;
 }
 
@@ -118,9 +133,13 @@ main {
   .c2{
     float: left;
     margin-left: 100px;
-    margin-right: 20px;
-   
-     }
+    }
+
+.faq{
+   margin-left: 10rem;
+   text-align: left;
+}
+
 aside{
     padding: 10px;
 }
