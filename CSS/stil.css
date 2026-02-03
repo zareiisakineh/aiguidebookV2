@@ -5,38 +5,27 @@ body{
     margin: 0;
 }
 
-.KI {
-     /* position: absolute;*/
-   
+
+    .KI{
     background-image: url("../images/image2.png");
     max-inline-size: 100%;
     display: block;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 6rem 1rem;
+    padding: 5rem 1rem;
     text-align: center;
-    opacity: 0.8;
-     }
+   
+    }
      .c1{ 
     font-size: 2rem;
     font-style: oblique;
     text-align: center;
-    opacity: 1.2;
+    color: rgb(3, 5, 4);
+    
         }
 
-   /*  .c1{
-    margin: 0;
-        opacity: 0.4;
-        padding: 10;
-}
-.bilde {
-    position: relative;
-    text-align: center;
-    opacity: 0,4;
-    display: block;
-     }
-    */
+ 
 
 .Nettegg{
     font-size: smaller;
@@ -170,8 +159,18 @@ li{
 }
 .quiz-boks {
   display: grid;
-   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
+  @media (width < 600px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @media (width > 600px) {
+     grid-template-columns: repeat(3, 1fr);
+  }
+  @media (width > 600px) {
+     grid-template-columns: repeat(3, 1fr);
+  }
+  
+  
  
 }
 .fasit p{
