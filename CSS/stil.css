@@ -87,7 +87,7 @@ p{
     background-color: rgb(150, 180, 180);
     outline: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 968px) {
     .menu-toggle {
         display: none; /* skjul hamburger */
     }
@@ -96,7 +96,7 @@ p{
         display: flex; /* vis alltid menyen */
         flex-direction: row;
         justify-content: center;
-        gap: 10rem;
+        gap: 8rem;
         margin: 0px;
     }
 
@@ -159,19 +159,27 @@ li{
 }
 .quiz-boks {
   display: grid;
-  gap: 3rem;
+   gap: 3rem;
+  @media (width < 150px) {
+    grid-template-columns: repeat(1, 1fr);
+   
+  }
+  @media (width > 880px) {
+     grid-template-columns: repeat(3, 1fr);
+    
+  }
+   }
+  .lenke-boks {
+  display: grid;
+  gap: 0.2rem;
   @media (width < 150px) {
     grid-template-columns: repeat(2, 1fr);
   }
   @media (width > 880px) {
      grid-template-columns: repeat(3, 1fr);
+     
   }
-  
-  
-  
-  
- 
-}
+} 
 .fasit p{
     font-size: x-small;
 }
@@ -189,5 +197,5 @@ summary{
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  margin: 2rem;
+  margin: 1rem;
 }
