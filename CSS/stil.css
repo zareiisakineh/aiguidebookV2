@@ -160,15 +160,14 @@ li{
 .quiz-boks {
   display: grid;
   gap: 3rem;
-  @media (width < 600px) {
-    grid-template-columns: repeat(1, 1fr);
+  @media (width < 150px) {
+    grid-template-columns: repeat(2, 1fr);
   }
-  @media (width > 600px) {
+  @media (width > 880px) {
      grid-template-columns: repeat(3, 1fr);
   }
-  @media (width > 600px) {
-     grid-template-columns: repeat(3, 1fr);
-  }
+  
+  
   
   
  
