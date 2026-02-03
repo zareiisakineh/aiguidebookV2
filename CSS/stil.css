@@ -4,8 +4,14 @@
 body{
     margin: 0;
 }
-
-
+header{
+    display: flex;
+   
+}
+header img{
+    padding: 20px;
+   
+}
     .KI{
     background-image: url("../images/image2.png");
     max-inline-size: 100%;
@@ -24,8 +30,6 @@ body{
     color: rgb(3, 5, 4);
     
         }
-
- 
 
 .Nettegg{
     font-size: smaller;
@@ -120,13 +124,15 @@ main {
 }
 
   .c2{
-    float: left;
-    margin-left: 100px;
+   border: #f48989;
+   background-color: aqua;
+    display: flex;
     }
 
 .faq{
-   margin-left: 10rem;
+ background-color: #f48989;
    text-align: left;
+   
 }
 
 aside{
