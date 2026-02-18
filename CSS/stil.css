@@ -13,13 +13,13 @@ header img{
    
 }
     .KI{
-    background-image: url("../images/image2.png");
+    background-image: url("../images/hovedSiden3.png");
     max-inline-size: 100%;
     display: block;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 5rem 1rem;
+    padding: 9rem 1rem;
     text-align: center;
    
     }
