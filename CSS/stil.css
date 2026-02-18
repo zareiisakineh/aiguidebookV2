@@ -9,7 +9,7 @@ header{
    
 }
 header img{
-    padding: 20px;
+    padding: 0px;
    
 }
     .KI{
@@ -31,11 +31,7 @@ header img{
     
         }
 
-.Nettegg{
-    font-size: smaller;
-    
-}
-  
+
 .navbar {
     background-color: rgb(127, 188, 178);
     padding: 10px;
@@ -43,7 +39,7 @@ header img{
     position: relative;
 }
 p{
-    font-size: x-large;
+    font-size: 1.2rem;
 }
 
 /* Hamburger-knapp */
@@ -62,10 +58,10 @@ p{
     list-style: none;
     padding: 0;
     margin: 10px 0 0 0;
-
+ justify-content: center;
     display: none; /* skjult på mobil */
     flex-direction: column;
-    gap: 10px;
+    gap: 1rem;
 }
 
 /* Menyen åpnes når navbar får fokus */
@@ -106,7 +102,7 @@ p{
 
     .navbar a {
         background: none;
-        padding: 5px 20;
+        padding: 5px 20px;
     }
 
     .navbar a:hover,
@@ -118,13 +114,13 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 10px;
+    padding: 1rem;
     margin-left: 20px;
     margin-right: 20px;
 }
 
   .c2{
-   border: #f48989;
+   border:ipx solid #f48989;
    background-color: aqua;
     display: flex;
     }
@@ -149,10 +145,10 @@ footer{
     clear: both;
     background-color: rgb(127, 188, 178);
     text-align: center;
-    padding: 25px;
+    padding: 5px;
     }
 li{
-    font-size: x-large;
+    font-size: 1.2rem;
 }
 .quiz{
     border-radius: 20px;
@@ -166,26 +162,109 @@ li{
 .quiz-boks {
   display: grid;
    gap: 3rem;
-  @media (width < 150px) {
-    grid-template-columns: repeat(1, 1fr);
-   
+    }
+  @media (max-width: 150px) {
+    .quiz-boks{
+          grid-template-columns: repeat(1, 1fr);
+    }
   }
-  @media (width > 880px) {
-     grid-template-columns: repeat(3, 1fr);
-    
+  @media (min-width: 880px) {
+    .quiz-boks{
+         grid-template-columns: repeat(3, 1fr);
+    } 
   }
-   }
-  .lenke-boks {
+  /*forslag fra chatgpt*/
+/* ===== MOBIL ===== */
+  .lenke-boks{
   display: grid;
-  gap: 0.2rem;
-  @media (width < 150px) {
-    grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+@media (max-width: 50px) {
+  .lenke-boks {
+    grid-template-columns: 1fr;
   }
-  @media (width > 880px) {
-     grid-template-columns: repeat(3, 1fr);
-     
+}
+@media (min-width: 1023px) {
+  .lenke-boks {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+    .lenke-boks{
+        display: block;
+    }
+    .index-boks{
+        gap: 3rem;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    h1, h2 {
+        font-size: 1.3rem;
+    }
+}
+/* ===== PC ===== */
+@media screen and (min-width: 1025px) {
+    .lenke-boks {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    main {
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+
+.index-boks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+@media (max-width: 50px) {
+  .index-boks {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1023px) {
+  .index-boks {
+    grid-template-columns: repeat(4, 1fr);
   }
 } 
+/*forslag fra chatgpt*/
+/* ===== MOBIL ===== */
+@media screen and (max-width: 600px) {
+    .index-boks{
+        display: block;
+    }
+    .index-boks{
+        gap: 3rem;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    h1, h2 {
+        font-size: 1.3rem;
+    }
+}
+/* ===== PC ===== */
+@media screen and (min-width: 1025px) {
+    .index-boks {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    main {
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+
+/*forslag fra chatgpt*/
+/* ===== MOBIL ===== */
+
 .fasit p{
     font-size: medium;
 }
@@ -195,12 +274,20 @@ summary{
     font-size: x-large;
     }
 .int{
-      border-radius: 20px;
+    border-radius: 20px;
     background-color: rgb(224, 238, 231);
-     border: 1px solid #f48989;
-  padding: 1rem;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  margin: 1rem;
+    border: 1px solid #f48989;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
 }
+
+
+    main {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+
