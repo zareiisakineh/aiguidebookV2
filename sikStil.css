@@ -33,9 +33,8 @@ header img{
     
         }
 
-
 .navbar {
-    background-color: rgb(127, 188, 178);
+    background-color: #5fa79b;
     padding: 10px;
     margin-top: 0px;
     position: relative;
@@ -63,8 +62,9 @@ p{
  justify-content: center;
     display: none; /* skjult på mobil */
     flex-direction: column;
-    gap: 1rem;
+    gap: 9rem;
 }
+
 
 /* Menyen åpnes når navbar får fokus */
 .navbar:focus-within ul {
@@ -85,46 +85,29 @@ p{
 
 /* Hover + fokus */
 .navbar a:hover,
-.navbar a:focus-visible {
-    background-color: rgb(150, 180, 180);
-    outline: none;
+.navbar a:focus-visible,
+button:focus-visible {
+    background-color: rgb(219, 230, 230);
+    /*outline: none;*/
+    outline: 3px solid #000;
+    outline-offset: 3px;
 }
-@media (min-width: 768px) {
-   /* ===== MOBIL (standard) ===== */
-
-.menu-toggle {
-    display: block;
-}
-
-.navbar ul {
-    display: none;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-/* ===== NETTBRETT + PC ===== */
-@media (min-width: 768px) {
-
+@media (min-width: 968px) {
     .menu-toggle {
         display: none; /* skjul hamburger */
     }
 
-    .navbar ul {
-        display: flex; /* vis meny */
-        flex-direction: row;
-        justify-content: center;
-        gap: 3rem;
-        margin: 0;
+    .navbar a {
+        min-height: 44px;
+        background: none;
+        padding: 5px 20px;
     }
 
-    .navbar a {
-        background: none;
-        padding: 10px 15px;
-        font-size: 1rem;
+    .navbar a:hover,
+    .navbar a:focus-visible {
+        background-color: rgb(200, 202, 200);
     }
 }
-    }
-
 main {
     display: flex;
     flex-direction: column;
@@ -135,7 +118,7 @@ main {
 }
 
   .c2{
-   border:ipx solid #f48989;
+   border:1px solid #f48989;
    background-color: aqua;
     display: flex;
     }
@@ -156,6 +139,7 @@ article{
      padding: 10px;
 }
 footer{
+     color: #000;
     display: block;
     clear: both;
     background-color: rgb(127, 188, 178);
@@ -163,7 +147,7 @@ footer{
     padding: 5px;
     }
 li{
-    font-size: 1.2rem;
+    font-size: larger;
 }
 .quiz{
     border-radius: 20px;
@@ -175,15 +159,27 @@ li{
     display: flex;
     flex-direction: column;
 }
-.quiz-boks {
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+        display: flex; /* vis alltid menyen */
+        flex-direction: row;
+        justify-content: center;
+        gap: 9rem;
+        margin: 0px;
+    }
+/*.quiz-boks {
   display: grid;
    gap: 3rem;
     }
+
   @media (max-width: 150px) {
     .quiz-boks{
           grid-template-columns: repeat(1, 1fr);
     }
   }
+    
   @media (min-width: 880px) {
     .quiz-boks{
          grid-template-columns: repeat(3, 1fr);
@@ -191,7 +187,7 @@ li{
   }
   /*forslag fra chatgpt*/
 /* ===== MOBIL ===== */
-  .lenke-boks{
+ /* .lenke-boks{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
@@ -220,7 +216,7 @@ li{
         font-size: 1.3rem;
     }
 }
-/* ===== PC ===== */
+/* ===== PC ===== 
 @media screen and (min-width: 1025px) {
     .lenke-boks {
         display: grid;
@@ -231,14 +227,15 @@ li{
         max-width: 1200px;
         margin: auto;
     }
-}
-
+*/
+/*
 .index-boks {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
-@media (max-width: 50px) {
+  */
+/*@media (max-width: 50px) {
   .index-boks {
     grid-template-columns: 1fr;
   }
@@ -248,13 +245,14 @@ li{
   .index-boks {
     grid-template-columns: repeat(2, 1fr);
   }
-} 
+} */
 /*forslag fra chatgpt*/
 /* ===== MOBIL ===== */
-@media screen and (max-width: 600px) {
+/*@media screen and (max-width: 600px) {
     .index-boks{
         display: block;
     }
+       
     .index-boks{
         gap: 3rem;
     }
@@ -264,20 +262,16 @@ li{
     h1, h2 {
         font-size: 1.3rem;
     }
-}
-/* ===== PC ===== */
+ 
+/* ===== PC ===== 
 @media screen and (min-width: 1025px) {
     .index-boks {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 2rem;
     }
-    main {
-        max-width: 1200px;
-        margin: auto;
-    }
 }
-
+*/
 /*forslag fra chatgpt*/
 /* ===== MOBIL ===== */
 
@@ -299,13 +293,60 @@ summary{
     flex-direction: column;
     margin: 1rem;
 }
-
-
-    main {
-        max-width: 1200px;
-        margin: auto;
-    }
-
 h1{
-    font-size: 30px;
+    font-size: 2rem;
+}
+/* ===== MOBIL (default) ===== */
+
+.index-boks,
+.lenke-boks,
+.quiz-boks {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+/* ===== NETTBRETT ===== */
+@media (min-width: 630px) {
+
+  .index-boks {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .lenke-boks {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .quiz-boks {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+/* ===== DESKTOP ===== */
+@media (min-width: 1025px) {
+
+  .lenke-boks {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .quiz-boks {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .index-boks {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .navbar a{
+    font-size: larger;
+    padding-top: 10px;
+    padding-bottom: 0px;
+  }
 }
