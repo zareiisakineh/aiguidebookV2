@@ -39,7 +39,7 @@ header img{
         }
 
 .navbar {
-    background-color: #c1dff3;
+    background-color: #dceaf3;
     padding: 10px;
     margin-top: 0px;
     position: relative;
@@ -120,7 +120,7 @@ button:focus-visible {
 
     .navbar a:hover,
     .navbar a:focus-visible {
-        background-color: rgb(200, 202, 200);
+        background-color: rgb(246, 249, 246);
     }
 }
 main {
@@ -134,7 +134,7 @@ main {
 
   .c2{
    border:ipx solid #f48989;
-   background-color: aqua;
+   background-color: rgb(235, 249, 249);
     display: flex;
     }
 
@@ -156,7 +156,7 @@ article{
 footer{
     display: block;
     clear: both;
-    background-color: #c1dff3;
+    background-color: #dceaf3;
     text-align: center;
     padding: 5px;
     }
@@ -165,8 +165,8 @@ li{
 }
 .quiz{
     border-radius: 20px;
-    background-color: rgb(220, 250, 242);
-     border: 1px solid #ddd;
+    background-color: rgb(241, 248, 248);
+     border: 1px solid #db9191;
     padding: 1.4rem;
     margin-bottom: 1rem;
     box-sizing: border-box;
@@ -289,7 +289,7 @@ summary{
     }
 .int{
     border-radius: 20px;
-    background-color: rgb(224, 238, 231);
+    background-color: rgb(246, 248, 247);
     border: 1px solid #f48989;
     padding: 1rem;
     box-sizing: border-box;
