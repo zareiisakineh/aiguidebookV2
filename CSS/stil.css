@@ -190,7 +190,9 @@ h1{
 
 .index-boks,
 .lenke-boks,
-.quiz-boks {
+.quiz-boks, 
+.faq-boks {
+    grid-template-columns: 1fr 1fr;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
@@ -208,6 +210,9 @@ h1{
   }
 
   .quiz-boks {
+    grid-template-columns: 1fr 1fr;
+  }
+  .faq-boks {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -232,6 +237,9 @@ h1{
     grid-template-columns: repeat(3, 1fr);
   }
   .index-boks {
+    grid-template-columns: repeat(2, 1fr);
+  }
+   .faq-boks {
     grid-template-columns: repeat(5, 1fr);
   }
 }
