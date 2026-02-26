@@ -173,109 +173,7 @@ li{
     display: flex;
     flex-direction: column;
 }
-/*.quiz-boks {
-  display: grid;
-   gap: 3rem;
-    }
 
-  @media (max-width: 150px) {
-    .quiz-boks{
-          grid-template-columns: repeat(1, 1fr);
-    }
-  }
-    
-  @media (min-width: 880px) {
-    .quiz-boks{
-         grid-template-columns: repeat(3, 1fr);
-    } 
-  }
-  /*forslag fra chatgpt*/
-/* ===== MOBIL ===== */
- /* .lenke-boks{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-@media (max-width: 50px) {
-  .lenke-boks {
-    grid-template-columns: 1fr;
-  }
-}
-@media (min-width: 1023px) {
-  .lenke-boks {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media screen and (max-width: 600px) {
-    .lenke-boks{
-        display: block;
-    }
-    .index-boks{
-        gap: 3rem;
-    }
-    nav ul {
-        flex-direction: column;
-    }
-    h1, h2 {
-        font-size: 1.3rem;
-    }
-}
-/* ===== PC ===== 
-@media screen and (min-width: 1025px) {
-    .lenke-boks {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
-    }
-    main {
-        max-width: 1200px;
-        margin: auto;
-    }
-*/
-/*
-.index-boks {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-  */
-/*@media (max-width: 50px) {
-  .index-boks {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (min-width: 1023px) {
-  .index-boks {
-    grid-template-columns: repeat(2, 1fr);
-  }
-} */
-/*forslag fra chatgpt*/
-/* ===== MOBIL ===== */
-/*@media screen and (max-width: 600px) {
-    .index-boks{
-        display: block;
-    }
-       
-    .index-boks{
-        gap: 3rem;
-    }
-    nav ul {
-        flex-direction: column;
-    }
-    h1, h2 {
-        font-size: 1.3rem;
-    }
- 
-/* ===== PC ===== 
-@media screen and (min-width: 1025px) {
-    .index-boks {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 2rem;
-    }
-}
-*/
 /*forslag fra chatgpt*/
 /* ===== MOBIL ===== */
 
@@ -348,4 +246,47 @@ h1{
   .index-boks {
     grid-template-columns: repeat(4, 1fr);
   }
+}
+.int a{
+    text-decoration: none;
+}
+/* Hjelp fra SIKT: Style for details-knappene (summary) */
+details summary {
+    background-color: #cce2e0; /* Grønn bakgrunn */
+    color: rgb(2, 1, 1); /* Hvit tekst */
+    border: none; /* Fjern standard kantlinje */
+    padding: 10px 20px; /* Innvendig padding */
+    margin: 10px 0; /* Mellomrom rundt knappen */
+    border-radius: 10px; /* Avrundede hjørner */
+    font-size: 1rem; /* Skriftstørrelse */
+    cursor: pointer; /* Endre markør for klikkbarhet */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animasjon for hover */
+}
+
+/* Hover-effekt for summary */
+details summary:hover {
+    background-color: #caf7eb; /* Mørkere grønn ved hover */
+    transform: scale(1.05); /* Gjør knappen litt større */
+}
+
+/* Fokusstil for tastaturbruk */
+details summary:focus {
+    outline: 3px solid #000; /* Svart kantlinje ved fokus */
+    outline-offset: 3px; /* Avstand fra kantlinjen */
+}
+
+/* Klikkeffekt */
+details summary:active {
+    background-color: #3b816c; /* Enda mørkere grønn ved klikk */
+    transform: scale(0.95); /* Gjør knappen litt mindre */
+}
+
+/* Styling for innholdet inni details */
+details p {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f0f0f0; /* Lys bakgrunn for svaret */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
 }
