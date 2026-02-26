@@ -260,7 +260,7 @@ a{
      background-color: #d3f5ec; /* Mørkere grønn ved hover */
     transform: scale(1.05); /* Gjør knappen litt større */
      cursor: pointer;
-     padding: 1rem;
+     
 }
 summary{
     font-style: normal;
@@ -277,7 +277,7 @@ details summary {
     border-radius: 10px; /* Avrundede hjørner */
     font-size: 1rem; /* Skriftstørrelse */
     cursor: pointer; /* Endre markør for klikkbarhet */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Animasjon for hover */
+   /* transition: background-color 0.3s ease, transform 0.2s ease; /* Animasjon for hover */
 }
 
 /* Hover-effekt for summary */
