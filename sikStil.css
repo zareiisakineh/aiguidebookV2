@@ -13,26 +13,17 @@ header img{
     padding-right: 10px;
    
 }
-    /*.KI{
-    background-image: url("../images/hovedside.png");
-    max-inline-size: 100%;
-    display: block;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-top: 0px;
-    padding-bottom: 200px;
-    text-align: center;
-    }
-    */
-     .c1{ 
+   
+ .c1{ 
     font-size: 2rem;
     font-style: oblique;
     text-align: center;
     color: rgb(3, 5, 4);
     
         }
-
+a{
+    background-color: #f48989;
+}
 .navbar {
     background-color: #5fa79b;
     padding: 10px;
@@ -129,15 +120,6 @@ main {
    
 }
 
-aside{
-    padding: 10px;
-}
-section{
-     padding: 10px;
-}
-article{
-     padding: 10px;
-}
 footer{
      color: #000;
     display: block;
@@ -169,120 +151,10 @@ li{
         gap: 9rem;
         margin: 0px;
     }
-/*.quiz-boks {
-  display: grid;
-   gap: 3rem;
-    }
 
-  @media (max-width: 150px) {
-    .quiz-boks{
-          grid-template-columns: repeat(1, 1fr);
-    }
-  }
-    
-  @media (min-width: 880px) {
-    .quiz-boks{
-         grid-template-columns: repeat(3, 1fr);
-    } 
-  }
-  /*forslag fra chatgpt*/
-/* ===== MOBIL ===== */
- /* .lenke-boks{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-@media (max-width: 50px) {
-  .lenke-boks {
-    grid-template-columns: 1fr;
-  }
-}
-@media (min-width: 1023px) {
-  .lenke-boks {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media screen and (max-width: 600px) {
-    .lenke-boks{
-        display: block;
-    }
-    .index-boks{
-        gap: 3rem;
-    }
-    nav ul {
-        flex-direction: column;
-    }
-    h1, h2 {
-        font-size: 1.3rem;
-    }
-}
-/* ===== PC ===== 
-@media screen and (min-width: 1025px) {
-    .lenke-boks {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
-    }
-    main {
-        max-width: 1200px;
-        margin: auto;
-    }
-*/
-/*
-.index-boks {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-  */
-/*@media (max-width: 50px) {
-  .index-boks {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (min-width: 1023px) {
-  .index-boks {
-    grid-template-columns: repeat(2, 1fr);
-  }
-} */
-/*forslag fra chatgpt*/
-/* ===== MOBIL ===== */
-/*@media screen and (max-width: 600px) {
-    .index-boks{
-        display: block;
-    }
-       
-    .index-boks{
-        gap: 3rem;
-    }
-    nav ul {
-        flex-direction: column;
-    }
-    h1, h2 {
-        font-size: 1.3rem;
-    }
- 
-/* ===== PC ===== 
-@media screen and (min-width: 1025px) {
-    .index-boks {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 2rem;
-    }
-}
-*/
 /*forslag fra chatgpt*/
 /* ===== MOBIL ===== */
 
-.fasit p{
-    font-size: medium;
-}
-summary{
-    font-style: normal;
-   padding: 20px;
-    font-size: x-large;
-    }
 .int{
     border-radius: 20px;
     background-color: rgb(224, 238, 231);
@@ -349,4 +221,7 @@ h1{
     padding-top: 10px;
     padding-bottom: 0px;
   }
+}
+a{
+    text-decoration: none;
 }
