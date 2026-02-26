@@ -3,6 +3,7 @@
 ------------------------ */
 body{
     margin: 0;
+   
 }
 header{
     display: flex;
@@ -240,17 +241,26 @@ h1{
     grid-template-columns: repeat(3, 1fr);
   }
   .index-boks {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
+}
+a{
+    padding: 0.5rem;
 }
 .int a{
     text-decoration: none;
-    font-size: larger;
-}
+    margin: 0px 0; /* Mellomrom rundt knappen */
+    border-radius: 10px; /* Avrundede hjørner */
+    font-size: 1rem; /* Skriftstørrelse */
+    cursor: pointer; 
+    background-color: #d1e6e4;
+  padding-bottom: 4rem;
+   }
 .int a:hover{
-     background-color: #caf7eb; /* Mørkere grønn ved hover */
+     background-color: #d3f5ec; /* Mørkere grønn ved hover */
     transform: scale(1.05); /* Gjør knappen litt større */
-     cursor: pointer; 
+     cursor: pointer;
+     padding: 1rem;
 }
 summary{
     font-style: normal;
@@ -260,7 +270,7 @@ summary{
 /* Fikk hjelp fra SIKT for å style details-knappene (summary) */
 details summary {
     background-color: #cce2e0; /* Grønn bakgrunn */
-    color: rgb(2, 1, 1); /* Hvit tekst */
+    color: rgb(2, 1, 1); 
     border: none; /* Fjern standard kantlinje */
     padding: 10px 20px; /* Innvendig padding */
     margin: 10px 0; /* Mellomrom rundt knappen */
