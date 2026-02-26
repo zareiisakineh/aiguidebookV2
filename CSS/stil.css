@@ -236,7 +236,7 @@ h1{
   }
 }
 a{
-    padding: 0.5rem;
+    padding: 1rem;
 }
 .int a{
     text-decoration: none;
@@ -245,7 +245,7 @@ a{
     font-size: 1rem; /* Skriftstørrelse */
     cursor: pointer; 
     background-color: #d1e6e4;
-  padding-bottom: 4rem;
+  padding: rem;
    }
 .int a:hover{
      background-color: #d3f5ec; /* Mørkere grønn ved hover */
