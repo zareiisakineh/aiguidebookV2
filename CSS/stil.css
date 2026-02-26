@@ -180,11 +180,7 @@ li{
 .fasit p{
     font-size: medium;
 }
-summary{
-    font-style: normal;
-   padding: 20px;
-    font-size: x-large;
-    }
+
 .int{
     border-radius: 20px;
     background-color: rgb(246, 248, 247);
@@ -249,8 +245,19 @@ h1{
 }
 .int a{
     text-decoration: none;
+    font-size: larger;
 }
-/* Hjelp fra SIKT: Style for details-knappene (summary) */
+.int a:hover{
+     background-color: #caf7eb; /* Mørkere grønn ved hover */
+    transform: scale(1.05); /* Gjør knappen litt større */
+     cursor: pointer; 
+}
+summary{
+    font-style: normal;
+   padding: 20px;
+    font-size: x-large;
+    }
+/* Fikk hjelp fra SIKT for å style details-knappene (summary) */
 details summary {
     background-color: #cce2e0; /* Grønn bakgrunn */
     color: rgb(2, 1, 1); /* Hvit tekst */
